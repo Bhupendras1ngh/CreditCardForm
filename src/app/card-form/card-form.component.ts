@@ -28,11 +28,15 @@ export class CardFormComponent implements OnInit {
     Validators.maxLength(3)
   ])
   });
-  constructor() { }
+  constructor() { console.log(this.cardForm) }
 
   ngOnInit(): void {
   }
   onSubmit(){
     console.log("Form has been submitted")
+  }
+
+  onResetClick(){
+     this.cardForm.reset();
   }
 }
