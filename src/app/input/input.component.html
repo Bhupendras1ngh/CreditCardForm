@@ -19,5 +19,8 @@
     max length need to be {{control.errors.maxlength.requiredLength}}
     and entered length is {{control.errors.maxlength.actualLength}}
 </div>
+<div class= "help is-danger" *ngIf ="control.errors.pattern">
+  invalid Pattern
+</div>
   </ng-container>
 </div>
